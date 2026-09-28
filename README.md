@@ -30,6 +30,18 @@ npx prisma migrate dev --name auth_user
 npx prisma generate
 ```
 
+ไฟล์ _.env_
+
+```
+AUTH_SECRET="ใส่-secret-ของคุณ"
+```
+
+สร้าง AUTH_SECRET ได้ด้วย
+
+```bash
+npx auth secret
+```
+
 _auth/ts_
 
 ```tsx
@@ -289,16 +301,8 @@ http://localhost:3000/api/auth/callback/github
 ไฟล์ _.env_
 
 ```
-AUTH_SECRET="ใส่-secret-ของคุณ"
-
 AUTH_GITHUB_ID="xxxxxxxxxxxxxxxx"
 AUTH_GITHUB_SECRET="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
-```
-
-สร้าง AUTH_SECRET ได้ด้วย
-
-```bash
-npx auth secret
 ```
 
 แก้ _app/auth.ts_
