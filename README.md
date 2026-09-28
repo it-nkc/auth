@@ -1,3 +1,25 @@
+## การ login ด้วย Username & password และ Github (Authentication)
+
+> app/
+> ├── login/
+> │ └── page.tsx
+> ├── admin/
+> │ └── page.tsx
+> ├── unauthorized/
+> │ └── page.tsx
+> ├── api/
+> │ └── auth/
+> │ └── [...nextauth]/
+> │ └── route.ts
+> ├── lib/
+> │ └── prisma.ts
+> └── layout.tsx
+
+auth.ts
+
+prisma/
+└── schema.prisma
+
 ```bash
 npm install next-auth@beta
 npm install bcryptjs
